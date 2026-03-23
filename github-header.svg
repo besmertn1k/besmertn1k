@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+    </pattern>
+    <linearGradient id="redFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E01030" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E01030" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect width="900" height="320" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <!-- Background -->
+    <rect width="900" height="320" fill="#000000"/>
+    <rect width="900" height="320" fill="url(#grid)"/>
+
+    <!-- Red diagonal slash -->
+    <rect x="680" y="-100" width="180" height="600" fill="#E01030" opacity="0.04" transform="rotate(15, 770, 160)"/>
+    
+    <!-- Left red glow -->
+    <rect x="0" y="0" width="400" height="320" fill="url(#redFade)"/>
+
+    <!-- Top accent line -->
+    <rect x="0" y="0" width="900" height="3" fill="#E01030"/>
+
+    <!-- Red dot -->
+    <circle cx="60" cy="100" r="5" fill="#E01030"/>
+
+    <!-- Name -->
+    <text x="82" y="108" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" fill="#FFFFFF" letter-spacing="1">A.Shultz</text>
+
+    <!-- Tagline -->
+    <text x="60" y="148" font-family="'Courier New', monospace" font-size="13" fill="#E01030" letter-spacing="2">
+      AUTOMATOR OF IT PROCEDURES &amp; CREATOR OF TOOLS
+    </text>
+
+    <!-- Description lines -->
+    <text x="60" y="188" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#999999">
+      No-code solutions for security, privacy and system administration.
+    </text>
+    <text x="60" y="212" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#666666">
+      Building tools that make IT workflows simpler and safer.
+    </text>
+
+    <!-- Bottom section: decorative terminal prompt -->
+    <rect x="60" y="248" width="780" height="48" rx="4" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1"/>
+    <circle cx="80" cy="272" r="5" fill="#E01030"/>
+    <circle cx="96" cy="272" r="5" fill="#333333"/>
+    <circle cx="112" cy="272" r="5" fill="#222222"/>
+    <text x="132" y="277" font-family="'Courier New', monospace" font-size="13" fill="#555555">
+      ~/a.shultz $
+    </text>
+    <text x="255" y="277" font-family="'Courier New', monospace" font-size="13" fill="#999999">
+      cat skills.conf
+    </text>
+    <text x="405" y="277" font-family="'Courier New', monospace" font-size="13" fill="#E01030">
+      →
+    </text>
+    <text x="425" y="277" font-family="'Courier New', monospace" font-size="13" fill="#666666">
+      automation · security · privacy · sysadmin · tools
+    </text>
+
+    <!-- Vertical red accent line on left -->
+    <rect x="0" y="80" width="3" height="140" fill="#E01030" opacity="0.6"/>
+
+    <!-- Bottom line -->
+    <rect x="0" y="317" width="900" height="3" fill="#E01030"/>
+
+    <!-- Corner markers -->
+    <rect x="0" y="0" width="20" height="3" fill="#E01030"/>
+    <rect x="0" y="0" width="3" height="20" fill="#E01030"/>
+    <rect x="880" y="0" width="20" height="3" fill="#E01030"/>
+    <rect x="897" y="0" width="3" height="20" fill="#E01030"/>
+  </g>
+</svg>
